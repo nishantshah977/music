@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NiMusic</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.lordicon.com/fudrjiwc.js"></script>
+    <script src="https://kit.fontawesome.com/adc337ad24.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <div class="app-container dark-mode">
+         <h2 class="name">Nishant Shah</h2>
+  <header>
+      
+      
+      <h2>
+    <marquee scrollamount="3" class="title">Click Play Below</marquee>
+    </h2>
+    
+    <h5 class="artist">Unknown</h5>
+    
+  </header>
+  <main>
+      <img src="https://www.headphonesty.com/wp-content/uploads/2021/04/Main_Image_jpeg-1.jpg" class="img">
+      <br>
+      
+      <div style="padding:20px;">
+          <span id="currentDuration" style="float:left;">00:00</span>
+          <span id="audioDuration" style="float:right;">00:00</span>
+          
+      <input type="range" class="meter" value="0" max="">
+      
+      </div>
+      
+      <br>
+      <!-- Play Button -->
+      <button id="play"
+    style="width:100px;height:100px; background-color:white;border-radius:100%;" onclick="start()">
+    <span class="playbtn">
+        <i class="fa-4x fa-regular fa-circle-play"></i>
+    </span>
+</button>
+
+<!-- Previous button -->
+<lord-icon
+    src="https://cdn.lordicon.com/xsdtfyne.json"
+    trigger="hover"
+    style="width:50px;height:50px; background-color:white;border-radius:100%;float:left;margin:20px 0px 0px 60px;" id="previous">
+</lord-icon>
+
+  <!-- Next Button -->
+
+<lord-icon
+    src="https://cdn.lordicon.com/rxufjlal.json"
+    trigger="hover"
+    style="width:50px;height:50px; background-color:white;border-radius:100%;float:right;margin:20px 60px 0px 0px;" id="next">
+</lord-icon>
+      
+  </main>  
+ 
+</div>
+
+<audio src="audio/first.mp3"></audio>
+
+<br>
+<br>
+<script src="music.js"></script>
+</body>
+</html>
